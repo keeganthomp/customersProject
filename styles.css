@@ -1,0 +1,15 @@
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5% 0 5%;
+}
+
+.profileWrapper {
+    width: 23%;
+    margin: 8px;
+}
+
+.profPic {
+    width: 100%;
+}
