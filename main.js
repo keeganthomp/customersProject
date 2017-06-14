@@ -1,6 +1,3 @@
-// 1. Fetch your users data
-// 2. Loop over the data
-// 3. Display it in the `.customers` element
 var customerDiv = document.querySelector(".customers");
 
 (function() {
@@ -28,48 +25,30 @@ var customerDiv = document.querySelector(".customers");
       createDiv.classList.add("profileWrapper");
       customerDiv.appendChild(createDiv);
 
-      // function makeProfPic() {
         var createImgTag = document.createElement("img");
         createImgTag.classList.add("profPic");
         createDiv.appendChild(createImgTag);
         createImgTag.src = data.picture.large;
-      // }
 
-      // function addName() {
         var createName = document.createElement("p");
         createName.classList.add("name");
         createDiv.appendChild(createName);
         createName.innerHTML = data.name.first + " " + data.name.last;
-      // }
 
-      // function addEmail() {
         var createEmail = document.createElement("p");
         createEmail.classList.add("email");
         createDiv.appendChild(createEmail);
         createEmail.innerHTML = data.email
-        
-      // }
 
-      // function addAddress() {
         var createAddress = document.createElement("p");
         createAddress.classList.add("address");
         createDiv.appendChild(createAddress);
         createAddress.innerHTML = data.location.street + "<br>" + data.location.city + ", " + data.location.state + " " + data.location.postcode;
-      // }
 
-      // function addPhone() {
         var createPhone = document.createElement("p");
         createPhone.classList.add("phone");
         createDiv.appendChild(createPhone);
         createPhone.innerHTML = data.phone;
-      // }
-
-
-      // makeProfPic();
-      // addName();
-      // addEmail();
-      // addAddress();
-      // addPhone();
         }
     addProfDiv();
   }
